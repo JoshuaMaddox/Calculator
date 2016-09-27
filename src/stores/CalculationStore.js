@@ -21,7 +21,6 @@ class CalculationStore extends EventEmitter {
       }
     })
   }
-  //Delete to here
 
   startListening(cb) {
     this.on('CHANGE', cb)
