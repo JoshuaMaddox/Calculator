@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-// import CalculationStore from '../stores/CalculationStore'
 import ButtonAction from '../actions/ButtonAction'
+import SoundEffectManager from 'sound-effect-manager'
+
+let sm = new SoundEffectManager();
+sm.loadFile('../sounds/click.mp3', 'click');
 
 export default class Buttons extends Component {
 
   
   buttonPressed(e) {
     e.preventDefault()
+    sm.play('click')
     let btnPress = e.target.id
     if(parseFloat(btnPress)){
       parseFloat(btnPress)
@@ -15,8 +19,6 @@ export default class Buttons extends Component {
   }
 
   render(){
-
-    // const { buttonPressed } = this.props
 
     return(
       <div className="buttonsContainer">

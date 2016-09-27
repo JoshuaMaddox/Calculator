@@ -25,6 +25,7 @@
     "react-addons-pure-render-mixin": "^15.3.2",
     "react-bootstrap": "^0.30.3",
     "react-dom": "^15.3.1",
+    "sound-effect-manager": "^1.0.1",
     "style-loader": "^0.13.1",
     "uuid": "^2.0.3",
     "webpack": "^1.13.2"
